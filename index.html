@@ -1,212 +1,253 @@
 <!DOCTYPE html>
 <html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sruputin - Es Susu Coklat & Kopi Susu Kekinian</title>
-    <meta name="description" content="Sruputin menyajikan es susu coklat dan kopi susu kekinian terbaik. Nikmati setiap tegukan kebahagiaan dengan cita rasa autentik.">
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
+    <meta
+      name="description"
+      content="Sruputin menyajikan es susu coklat dan kopi susu kekinian terbaik. Nikmati setiap tegukan kebahagiaan dengan cita rasa autentik."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <h2>Sruputin</h2>
-            </div>
-            <div class="nav-menu" id="nav-menu">
-                <a href="#home" class="nav-link">Home</a>
-                <a href="#products" class="nav-link">Menu</a>
-                <a href="#testimonials" class="nav-link">Testimoni</a>
-                <a href="#contact" class="nav-link">Kontak</a>
-            </div>
-            <div class="nav-toggle" id="nav-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+      <div class="nav-container">
+        <div class="nav-logo">
+          <h2>Sruputin</h2>
         </div>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#products" class="nav-link">Menu</a></li>
+          <li><a href="#testimonials" class="nav-link">Testimoni</a></li>
+          <li><a href="#contact" class="nav-link">Kontak</a></li>
+        </ul>
+        <button
+          class="nav-toggle"
+          id="nav-toggle"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+        >
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-background"></div>
-        <div class="hero-content">
-            <div class="container">
-                <h1 class="hero-title">
-                    <span class="brand-name">Sruputin</span>
-                </h1>
-                <p class="hero-subtitle">Nikmati Setiap Tegukan Kebahagiaan</p>
-                <p class="hero-description">
-                    Es susu coklat dan kopi susu kekinian yang dibuat dengan cinta untuk generasi yang mencintai cita rasa autentik
-                </p>
-                <div class="hero-buttons">
-                    <button class="btn btn-primary" onclick="orderWhatsApp()">
-                        <i class="fab fa-whatsapp"></i>
-                        Pesan Sekarang
-                    </button>
-                    <button class="btn btn-secondary" onclick="scrollToProducts()">
-                        Lihat Menu
-                    </button>
-                </div>
-            </div>
+      <div class="hero-background"></div>
+      <div class="hero-content">
+        <div class="container">
+          <h1 class="hero-title">
+            <span class="brand-name">Sruputin</span>
+          </h1>
+          <p class="hero-subtitle">Nikmati Setiap Tegukan Kebahagiaan</p>
+          <p class="hero-description">
+            Es susu coklat dan kopi susu kekinian yang dibuat dengan cinta untuk
+            generasi yang mencintai cita rasa autentik
+          </p>
+          <div class="hero-buttons">
+            <button class="btn btn-primary" onclick="orderWhatsApp()">
+              <i class="fab fa-whatsapp"></i>
+              Pesan Sekarang
+            </button>
+            <button class="btn btn-secondary" onclick="scrollToProducts()">
+              Lihat Menu
+            </button>
+          </div>
         </div>
-        <div class="scroll-indicator">
-            <div class="scroll-mouse">
-                <div class="scroll-wheel"></div>
-            </div>
+      </div>
+      <div class="scroll-indicator">
+        <div class="scroll-mouse">
+          <div class="scroll-wheel"></div>
         </div>
+      </div>
     </section>
 
     <!-- Products Section -->
     <section id="products" class="products">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Menu <span class="highlight">Favorit</span></h2>
-                <p class="section-description">
-                    Pilihan minuman terbaik yang dibuat dengan bahan berkualitas tinggi untuk kepuasan maksimal
-                </p>
-            </div>
-            <div class="products-grid" id="products-grid">
-                <!-- Products will be loaded by JavaScript -->
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">
+            Menu <span class="highlight">Favorit</span>
+          </h2>
+          <p class="section-description">
+            Pilihan minuman terbaik yang dibuat dengan bahan berkualitas tinggi
+            untuk kepuasan maksimal
+          </p>
         </div>
+        <div class="products-grid" id="products-grid">
+          <!-- Products will be loaded by JavaScript -->
+        </div>
+      </div>
     </section>
 
     <!-- Testimonials Section -->
     <section id="testimonials" class="testimonials">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Kata <span class="highlight">Mereka</span></h2>
-                <p class="section-description">
-                    Testimoni dari pelanggan setia yang sudah merasakan kelezatan Sruputin
-                </p>
-            </div>
-            <div class="testimonials-slider">
-                <div class="testimonials-container" id="testimonials-container">
-                    <!-- Testimonials will be loaded by JavaScript -->
-                </div>
-                <button class="slider-btn prev-btn" onclick="prevTestimonial()">
-                    <i class="fas fa-chevron-left"></i>
-                </button>
-                <button class="slider-btn next-btn" onclick="nextTestimonial()">
-                    <i class="fas fa-chevron-right"></i>
-                </button>
-                <div class="slider-dots" id="slider-dots">
-                    <!-- Dots will be generated by JavaScript -->
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">
+            Kata <span class="highlight">Mereka</span>
+          </h2>
+          <p class="section-description">
+            Testimoni dari pelanggan setia yang sudah merasakan kelezatan
+            Sruputin
+          </p>
         </div>
+        <div class="testimonials-slider">
+          <div class="testimonials-container" id="testimonials-container">
+            <!-- Testimonials will be loaded by JavaScript -->
+          </div>
+          <button
+            class="slider-btn prev-btn"
+            onclick="prevTestimonial()"
+            aria-label="Previous testimonial"
+          >
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button
+            class="slider-btn next-btn"
+            onclick="nextTestimonial()"
+            aria-label="Next testimonial"
+          >
+            <i class="fas fa-chevron-right"></i>
+          </button>
+          <div class="slider-dots" id="slider-dots">
+            <!-- Dots will be generated by JavaScript -->
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Hubungi <span class="highlight">Kami</span></h2>
-                <p class="section-description">
-                    Siap melayani pesanan dan pertanyaan Anda. Jangan ragu untuk menghubungi kami!
-                </p>
-            </div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-card">
-                        <div class="contact-icon">
-                            <i class="fab fa-whatsapp"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h3>WhatsApp</h3>
-                            <p>Cara tercepat untuk memesan dan bertanya</p>
-                            <button class="btn btn-whatsapp" onclick="contactWhatsApp()">
-                                <i class="fab fa-whatsapp"></i>
-                                Chat WhatsApp
-                            </button>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-card">
-                        <div class="contact-icon">
-                            <i class="fab fa-instagram"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h3>Instagram</h3>
-                            <p>Follow untuk update menu dan promo terbaru</p>
-                            <button class="btn btn-instagram" onclick="openInstagram()">
-                                <i class="fab fa-instagram"></i>
-                                @sruputin_official
-                            </button>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-card">
-                        <div class="contact-icon">
-                            <i class="fas fa-clock"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h3>Jam Operasional</h3>
-                            <div class="operating-hours">
-                                <p>Senin - Jumat: 08.00 - 22.00</p>
-                                <p>Sabtu - Minggu: 09.00 - 23.00</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="contact-cta">
-                    <div class="cta-card">
-                        <h3>Siap Menikmati Sruputin?</h3>
-                        <p>Pesan sekarang dan rasakan kelezatan minuman premium kami. Delivery tersedia untuk area Jabodetabek!</p>
-                        <button class="btn btn-cta" onclick="orderWhatsApp()">
-                            <i class="fab fa-whatsapp"></i>
-                            Pesan Via WhatsApp
-                        </button>
-                        <div class="delivery-info">
-                            <div class="delivery-item">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <span>Delivery Area</span>
-                            </div>
-                            <div class="delivery-item">
-                                <i class="fas fa-clock"></i>
-                                <span>30-45 Menit</span>
-                            </div>
-                        </div>
-                        <div class="delivery-note">
-                            <p>Minimum order Rp 50.000 untuk delivery gratis*</p>
-                            <p class="terms">*Syarat dan ketentuan berlaku</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">
+            Hubungi <span class="highlight">Kami</span>
+          </h2>
+          <p class="section-description">
+            Siap melayani pesanan dan pertanyaan Anda. Jangan ragu untuk
+            menghubungi kami!
+          </p>
         </div>
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-card">
+              <div class="contact-icon">
+                <i class="fab fa-whatsapp"></i>
+              </div>
+              <div class="contact-details">
+                <h3>WhatsApp</h3>
+                <p>Cara tercepat untuk memesan dan bertanya</p>
+                <button class="btn btn-whatsapp" onclick="contactWhatsApp()">
+                  <i class="fab fa-whatsapp"></i>
+                  Chat WhatsApp
+                </button>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon">
+                <i class="fab fa-instagram"></i>
+              </div>
+              <div class="contact-details">
+                <h3>Instagram</h3>
+                <p>Follow untuk update menu dan promo terbaru</p>
+                <button class="btn btn-instagram" onclick="openInstagram()">
+                  <i class="fab fa-instagram"></i>
+                  @sruputin_official
+                </button>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <div class="contact-details">
+                <h3>Jam Operasional</h3>
+                <div class="operating-hours">
+                  <p>Senin - Jumat: 08.00 - 22.00</p>
+                  <p>Sabtu - Minggu: 09.00 - 23.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-cta">
+            <div class="cta-card">
+              <h3>Siap Menikmati Sruputin?</h3>
+              <p>
+                Pesan sekarang dan rasakan kelezatan minuman premium kami.
+                Delivery tersedia untuk area Jabodetabek!
+              </p>
+              <button class="btn btn-cta" onclick="orderWhatsApp()">
+                <i class="fab fa-whatsapp"></i>
+                Pesan Via WhatsApp
+              </button>
+              <div class="delivery-info">
+                <div class="delivery-item">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>Delivery Area</span>
+                </div>
+                <div class="delivery-item">
+                  <i class="fas fa-clock"></i>
+                  <span>30-45 Menit</span>
+                </div>
+              </div>
+              <div class="delivery-note">
+                <p>Minimum order Rp 50.000 untuk delivery gratis*</p>
+                <p class="terms">*Syarat dan ketentuan berlaku</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <h3>Sruputin</h3>
-                    <p>Nikmati Setiap Tegukan Kebahagiaan</p>
-                </div>
-                <div class="footer-links">
-                    <a href="#home">Home</a>
-                    <a href="#products">Menu</a>
-                    <a href="#testimonials">Testimoni</a>
-                    <a href="#contact">Kontak</a>
-                </div>
-                <div class="footer-social">
-                    <a href="#" onclick="contactWhatsApp()"><i class="fab fa-whatsapp"></i></a>
-                    <a href="#" onclick="openInstagram()"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Sruputin. All rights reserved.</p>
-            </div>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <h3>Sruputin</h3>
+            <p>Nikmati Setiap Tegukan Kebahagiaan</p>
+          </div>
+          <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#products">Menu</a>
+            <a href="#testimonials">Testimoni</a>
+            <a href="#contact">Kontak</a>
+          </div>
+          <div class="footer-social">
+            <a href="#" onclick="contactWhatsApp()" aria-label="WhatsApp"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+            <a href="#" onclick="openInstagram()" aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
         </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Sruputin. All rights reserved.</p>
+        </div>
+      </div>
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
