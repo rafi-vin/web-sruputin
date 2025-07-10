@@ -410,6 +410,7 @@ body.loaded {
 .btn-order {
   background: #d97706;
   color: white;
+  position: center;
   padding: 0.75rem 1.5rem;
   border-radius: 25px;
   font-weight: 600;
